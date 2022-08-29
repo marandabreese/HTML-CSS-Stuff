@@ -1,2 +1,3 @@
 # HTML-CSS-Stuff
-projects for the html &amp; css course
+
+Includes projects from the Tech Academy HTML &amp; CSS course. 
