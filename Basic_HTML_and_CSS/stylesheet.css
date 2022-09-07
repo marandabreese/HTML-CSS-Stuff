@@ -1,0 +1,53 @@
+h1 {
+    color: red;
+    text-align: center;
+}
+
+.divider {
+    height: 10px;
+    background-color: black;
+    width: 90%;
+}
+
+p {
+    color: purple;
+    background-color:blanchedalmond;
+    font-size: 12px;
+    text-align: center;
+}
+
+p:hover {
+    text-shadow: 3px 1px 5px black;
+}
+
+.funstyle {
+    font-size: 18px;
+    margin-left: 30px;
+    background-color: wheat;
+}
+
+/* Tables CSS section */
+
+table {
+    border: 1px solid black;
+    font-family: "Figtree", sans-serif;
+}
+
+th {
+    font-size: 16px;
+    color: midnightblue;
+}
+
+td:hover {
+    background-color: sandybrown;
+}
+
+/* Lists CSS section */
+
+ol {
+    list-style-type: lower-greek;
+}
+
+ul {
+    list-style-type: disc;
+}
