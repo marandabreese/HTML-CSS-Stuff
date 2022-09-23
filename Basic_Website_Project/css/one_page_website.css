@@ -1,0 +1,167 @@
+body {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin: 0 auto;
+    background-color: #fff1e6;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Chalkboard', sans-serif;
+}
+
+/* ------------------------
+    Navigation Menu Styling
+---------------------------*/
+
+nav {
+    background-color: #3338e3;
+    top: 0;
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+}
+
+.menu ul {
+    list-style: none;
+    color: #fff;
+    position: relative;
+    text-align: center;
+}
+
+.menu ul a {
+    color: #fff;
+    text-transform: uppercase;
+    text-decoration: none;
+    display: inline-block;
+    padding: 5px 30px;
+    font-size: 18px;
+}
+
+.menu ul a:hover {
+    text-decoration: underline;
+}
+
+/* ------------------------
+     Hero Image Styling
+---------------------------*/
+
+#home {
+    background-image: url(https://www.pixelstalk.net/wp-content/uploads/images6/Animal-Crossing-Wallpaper-HD-Free-download-1536x864.jpg);
+    background-position: cover;
+    background-attachment: fixed;
+}
+
+.home-image {
+    text-align: center;
+    color: #fff;
+    font-size: 42px;
+    font-family: "Chalkboard";
+    padding: 300px 0;
+}
+
+.home-image span {
+    padding: 20px;
+    background-color: #3338e3;
+}
+
+/* ------------------------
+    Music Section Styling
+---------------------------*/
+
+.center {
+    text-align: center;
+}
+
+.container {
+    background-image: url(https://c4.wallpaperflare.com/wallpaper/810/717/264/animal-crossing-animal-crossing-new-leaf-blue-dual-monitors-wallpaper-preview.jpg);
+    margin: 50px 15%;
+    border-radius: 10px;
+    border: 3px solid #3338e3;
+    text-align: center;
+}
+
+.container iframe {
+    padding-bottom: 20px;
+}
+
+.container p {
+    color: #fff;
+    background-color: rgba(51, 56, 227, .75);
+    margin-right: 10%;
+    margin-left: 10%;
+    border-radius: 4px;
+    padding: 15px 10px;
+}
+
+h1 {
+    font-size: 30px;
+    color: #3338e3;
+    border: 2px solid rgba(51, 56, 227, .75);
+    padding: 5px;
+}
+/* ------------------------
+    RSVP Section Styling
+---------------------------*/
+.container h2 {
+    color: #fff;
+    background-color: rgba(51, 56, 227, .75);
+    padding: 10px;
+}
+
+.container h2 span {
+    text-transform: uppercase;
+    font-size: 30px;
+}
+
+input[type='text'] {
+    background-color: #fff;
+    color: #3338e3;
+    display: block;
+    margin: 1% auto;
+    padding: 15px 5px;
+    width: 45%;
+    text-transform: uppercase;
+    border-radius: 4px;
+    border: 2px solid rgba(51, 56, 227, .75);
+}
+
+input[type='text']:hover {
+    box-shadow: 0 0 9px rgba(0, 0, 0, .3);
+    color: #333;
+}
+
+input[type='radio'] {
+    border: 2px solid rgba(51, 56, 227, .75);
+}
+
+input[type='submit'] {
+    border-radius: 4px;
+    color: #fff;
+    background-color: rgba(51, 56, 227, .75);
+    border: none;
+    padding: 15px;
+    width: 20%;
+    margin-bottom: 15px;
+}
+
+input[type='submit']:hover {
+    box-shadow: 0 0 9px rgba(0, 0, 0, .3);
+    background-color: #3338e3;
+}
+
+.radio-flex {
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+    background-color: rgba(51, 56, 227, .75);
+    margin-right: 26%;
+    margin-left: 26%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.radio-flex div {
+    padding: 5px;
+}

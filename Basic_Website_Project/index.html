@@ -3,11 +3,12 @@
     <head>
         <title>Animal Crossing Fishing: An Excursion</title>
         <meta charset="utf-8">
+        <link rel="stylesheet" href="css/one_page_website.css">
     </head>
     <body>
         <!--Navigation-->
         <nav>
-            <div>
+            <div class="menu">
                 <ul>
                     <a href="#home"><li>Home</li></a>
                     <a href="#gallery"><li>The Fish</li></a>
@@ -18,16 +19,16 @@
         <!--Hero-->
         <div id="home">
             <div>
-                <div>
+                <div class="home-image">
                     <span>Fish Your Island: An Excursion</span>
                 </div>
             </div>
         </div>
         <!--Intro-->
         <main id="music">
-            <div>
+            <div class="center">
                 <h1>Fish Along to a Lo-Fi Track</h1>
-                <div>
+                <div class="container">
                     <p>Looking for a way to relax and experience the best of Animal Crossing fishing? Look no further than this stress-free island excursion.</p>
                     <iframe width="560" height="315" src="https://www.youtube.com/embed/_tjOAz6Ebak" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 </div>
@@ -35,9 +36,9 @@
         </main>
         <!--Gallery-->
         <section id="gallery">
-            <div>
+            <div class="center">
                 <h1>What You'll Catch</h1>
-                <div>
+                <div class="flex-container">
                     <!--Example Photo-->
                     <div class="photo-container">
                         <div class="photo">
@@ -143,9 +144,9 @@
         <!--Footer Form-->
         <section id="contact">
             <div>
-                <div>
+                <div class="center">
                     <h1>Get the Full Experience</h1>
-                    <div>
+                    <div class="container">
                         <h2><span>A Guided Tour You Can Embark on At Any Time</span><br>
                         Get Started Today!</h2>
                         <p>Fill out the form below to get a personalized tour book.</p>
@@ -154,20 +155,26 @@
                                 <input type="text" value="Character Name">
                                 <input type="text" value="Island Name">
                                 <input type="text" value="Dream Code">
-                                <div>
-                                    <p>Choose a Season to Start:</p>
-                                    <input type="radio" name="spring">
-                                    <label for="spring">Spring</label>
-                                    <input type="radio" name="summer">
-                                    <label for="summer">Summer</label>
-                                    <input type="radio" name="fall">
-                                    <label for="fall">Fall</label>
-                                    <input type="radio" name="winter">
-                                    <label for="winter">Winter</label>
+                                <p>Choose a Season to Start:</p>
+                                <div class="radio-flex">
+                                    <div>
+                                        <input type="radio" id='spring' name="season" value="spring">
+                                        <label for="spring">Spring</label>
+                                    </div>
+                                    <div>
+                                        <input type="radio" id='summer' name="season" value="summer">
+                                        <label for="summer">Summer</label>
+                                    </div>
+                                    <div>
+                                        <input type="radio" id='fall' name="season" value="fall">
+                                        <label for="fall">Fall</label>
+                                    </div>
+                                    <div>
+                                        <input type="radio" id='winter' name="season" value="winter">
+                                        <label for="winter">Winter</label>
+                                    </div>
                                 </div>
-                                <div>
-                                    <input type="submit" value="Submit">
-                                </div>
+                                <input type="submit" value="Submit">
                             </form>
                         </div>
                     </div>
