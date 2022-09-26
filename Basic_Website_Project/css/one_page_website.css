@@ -63,6 +63,7 @@ nav {
 .home-image span {
     padding: 20px;
     background-color: #3338e3;
+    border-radius: 8px;
 }
 
 /* ------------------------
@@ -71,6 +72,7 @@ nav {
 
 .center {
     text-align: center;
+    margin-top: 50px;
 }
 
 .container {
@@ -97,8 +99,10 @@ nav {
 h1 {
     font-size: 30px;
     color: #3338e3;
-    border: 2px solid rgba(51, 56, 227, .75);
+    border: 5px solid rgba(51, 56, 227, .75);
     padding: 5px;
+    width: 50%;
+    margin: 0 auto;
 }
 /* ------------------------
     RSVP Section Styling
@@ -164,4 +168,25 @@ input[type='submit']:hover {
 
 .radio-flex div {
     padding: 5px;
+}
+
+/* ------------------------
+    RSVP Section Styling
+---------------------------*/
+
+footer {
+    background-color: #3338e3;
+    color: #fff;
+    font-size: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    align-items: center;
+    padding: 5px;
+}
+
+footer a {
+    text-decoration: none;
+    color: #fff;
+    margin-right: 50px;
 }
