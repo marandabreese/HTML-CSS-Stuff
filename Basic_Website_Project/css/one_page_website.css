@@ -50,6 +50,7 @@ nav {
     background-image: url(https://www.pixelstalk.net/wp-content/uploads/images6/Animal-Crossing-Wallpaper-HD-Free-download-1536x864.jpg);
     background-position: cover;
     background-attachment: fixed;
+    background-size: cover;
 }
 
 .home-image {
