@@ -6,6 +6,9 @@
         <link rel="stylesheet" href="css/one_page_website.css">
     </head>
     <body>
+        <script>
+            document.body.classList.add('fade-out');
+        </script>
         <!--Navigation-->
         <nav>
             <div class="menu">
@@ -186,5 +189,29 @@
             <p>&copy; Maranda Breese 2022 &nbsp; &nbsp; | &nbsp; &nbsp;</p>
             <a href="https://github.com/marandabreese">Portfolio</a>
         </footer>
+        <!--Pop Up Form-->
+        <button class="form-button" onclick="openForm()">Ready to Start?</button>
+        <div class="popup" id="greatForm">
+            <form class="popup-form">
+                <h1>Get Started with the Tour!</h1>
+                <input type="text" name="name" value="Character Name">
+                <input type="text" name="email" value="Email">
+                <button type="submit" class="more-button">Submit</button>
+                <button type="button" class="more-button" onclick="closeForm()">Close</button>
+            </form>
+        </div>
+        <script>
+        window.addEventListener('DOMContentLoaded', () => {
+                document.body.classList.remove('fade-out');
+            });
+
+        function openForm() {
+            document.getElementById('greatForm').style.display = 'block';
+        }
+
+        function closeForm() {
+            document.getElementById('greatForm').style.display = 'none';
+        }
+        </script>
     </body>
 </html>

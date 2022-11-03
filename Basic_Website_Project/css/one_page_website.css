@@ -2,6 +2,13 @@ body {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     margin: 0 auto;
     background-color: #fff1e6;
+    opacity: 1;
+    transition: 1.2s opacity;
+}
+
+body.fade-out {
+    opacity: 0;
+    transition: none;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -56,11 +63,11 @@ nav {
 .home-image {
     text-align: center;
     color: #fff;
-    font-size: 42px;
+    font-size: 3vw;
     font-family: "Chalkboard";
     padding: 300px 0;
+    animation: zoomIn 5s;
 }
-
 .home-image span {
     padding: 20px;
     background-color: #3338e3;
@@ -150,10 +157,29 @@ input[type='submit'] {
     margin-bottom: 15px;
 }
 
-input[type='submit']:hover {
+input[type='submit']:hover, .form-button:hover {
     box-shadow: 0 0 9px rgba(0, 0, 0, .3);
     background-color: #3338e3;
 }
+
+button {
+    border-radius: 4px;
+    color: #fff;
+    background-color: rgba(51, 56, 227, .75);
+    border: none;
+    padding: 15px;
+    width: 20%;
+    margin-bottom: 15px;
+}
+
+.form-button {
+    position: fixed;
+    bottom: 23px;
+    right: 28px;
+    z-index: 1;
+    animation: attentionForm 4s ease 5s 3;
+}
+
 
 .radio-flex {
     margin-bottom: 15px;
@@ -190,4 +216,60 @@ footer a {
     text-decoration: none;
     color: #fff;
     margin-right: 50px;
+}
+
+/* ------------------------
+    Pop-Up Form Styling
+---------------------------*/
+
+.popup {
+    display: none;
+    position: fixed;
+    bottom: 0;
+    right: 15px;
+    z-index: 9;
+    background-color: white;
+    padding: 10px;
+    border-radius: 10px 10px 0 0;
+}
+
+.popup-form {
+    max-width: 90%;
+    margin: 0 auto;
+}
+
+.popup-form h1 {
+    width: 90%;
+    text-align: center;
+}
+
+.popup-form input {
+    width: 90%;
+    margin: 10px;
+}
+
+.more-button {
+    width: 49%;
+}
+
+/* ------------------------
+    Making an Animation
+---------------------------*/
+
+@keyframes attentionForm {
+    from {font-size: inherit;}
+    50% {font-size: 24px;}
+    to {font-size: inherit;}
+}
+
+@keyframes zoomIn {
+    from {
+        transform: scale(1,1);
+    }
+    50% {
+        transform: scale(1.2,1.2);
+    }
+    to {
+        transform: scale(1,1);
+    }
 }

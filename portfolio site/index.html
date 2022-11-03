@@ -5,6 +5,7 @@
         <meta name="viewport" content="width=device-width">
         <title>Maranda Breese</title>
         <link rel="stylesheet" href="stylesheet.css">
+        <script src="script.js"></script>
     </head>
     <body class="background">
         <!--NavBar-->
@@ -64,11 +65,13 @@
             </div>
             <div class="column_1 column_tall">
                 <h1 style="margin-top: -10px;">Contact</h1>
-                <form action="https://formspree.io/f/xknebowq" method="POST">
+                <form action="https://formspree.io/f/xknebowq" method="POST" id="myCoolForm" onsubmit="return checkNumber()">
                     <label>Name:</label>
                     <input type="text" placeholder="Enter Your Name">
                     <label>Email:</label>
                     <input type="text" placeholder="Enter Your Email">
+                    <label>Phone Number:</label>
+                    <input type="text" placeholder="Enter Your Phone Number" name="phone">
                     <label>Message:</label>
                     <input type="text" id="message" name="message" placeholder="Please write your message here!">
                     <input type="submit" value="SUBMIT">
