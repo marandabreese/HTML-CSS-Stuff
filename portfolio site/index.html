@@ -5,15 +5,16 @@
         <meta name="viewport" content="width=device-width">
         <title>Maranda Breese</title>
         <link rel="stylesheet" href="stylesheet.css">
-        <script src="script.js"></script>
+        <script src="script.js" defer></script>
     </head>
     <body class="background">
         <!--NavBar-->
         <nav>
             <a class="active" href="#home">Home</a>
+            <a href="#slideshow">Slideshow</a>
             <a href="#about">About</a>
             <a href="#projects">Projects</a>
-            <a href="#contact">Contact</a>
+            <a onclick="openForm()" ondblclick="closeForm()" style="cursor: pointer;">Contact</a>
         </nav>
         <br>
         <br>
@@ -29,6 +30,33 @@
             <strong>
                 <p class="center">Welcome to my portfolio!</p>
             </strong>
+        </div>
+        <!--Slideshow-->
+        <div id="slideshow">
+            <div id="slideshowbackground">
+                <div id="slideshowcontainer">
+                    <div class="slides fade">
+                        <img class='slideshowimages' src="assets/img_4.png" alt="">
+                        <div class="text">I'm available to assist with any project!</div>
+                    </div>
+                    <div class="slides fade">
+                        <img class='slideshowimages' src="assets/img_5.png" alt="">
+                        <div class="text">I'm available to assist with any project!</div>
+                    </div>
+                    <div class="slides fade">
+                        <img class='slideshowimages' src="assets/img_2.png" alt="">
+                        <div class="text">I'm available to assist with any project!</div>
+                    </div>
+                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                </div>
+                <br>
+                <div style="text-align: center;">
+                    <span class="dot" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                    <span class="dot" onclick="currentSlide(3)"></span>
+                </div>
+            </div>
         </div>
         <!--About-->
         <div class="row" id="about">
@@ -59,13 +87,10 @@
             </div>
         </div>
         <!--Contact-->
-        <div class="row" id="contact">
-            <div class="column_2 column_tall">
-                <img src="assets/img_2.png" alt="contact-img">
-            </div>
-            <div class="column_1 column_tall">
+        <button onclick="openForm()" class="popup">Contact</button>
+        <div id="contact">
+            <form action="https://formspree.io/f/xknebowq" method="POST" id="myCoolForm" onsubmit="return checkNumber()">
                 <h1 style="margin-top: -10px;">Contact</h1>
-                <form action="https://formspree.io/f/xknebowq" method="POST" id="myCoolForm" onsubmit="return checkNumber()">
                     <label>Name:</label>
                     <input type="text" placeholder="Enter Your Name">
                     <label>Email:</label>
@@ -74,9 +99,9 @@
                     <input type="text" placeholder="Enter Your Phone Number" name="phone">
                     <label>Message:</label>
                     <input type="text" id="message" name="message" placeholder="Please write your message here!">
-                    <input type="submit" value="SUBMIT">
-                </form>
-            </div>
+                    <button type="submit" class="btn">Submit</button>
+                    <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+            </form>
         </div>
         <!--Footer-->
         <footer>
